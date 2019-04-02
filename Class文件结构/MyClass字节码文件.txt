@@ -1,0 +1,121 @@
+Classfile /D:/selfProject/selfProject/ant-project/jvm/target/classes/com/ant/MyClass.class
+  Last modified 2019-4-1; size 834 bytes
+  MD5 checksum 6977fb12fec0727b5009672841e1a7e4
+  Compiled from "MyClass.java"
+public class com.ant.MyClass extends java.lang.Thread implements java.io.Serializable
+  minor version: 0
+  major version: 51
+  flags: ACC_PUBLIC, ACC_SUPER
+Constant pool:
+   #1 = Methodref          #11.#30        // java/lang/Thread."<init>":()V
+   #2 = Fieldref           #31.#32        // java/lang/System.out:Ljava/io/PrintStream;
+   #3 = String             #33            // foo
+   #4 = Methodref          #34.#35        // java/io/PrintStream.println:(Ljava/lang/String;)V
+   #5 = String             #36            // bar
+   #6 = Methodref          #37.#38        // java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+   #7 = Fieldref           #10.#39        // com/ant/MyClass.i:Ljava/lang/Integer;
+   #8 = String             #15            // str
+   #9 = Fieldref           #10.#40        // com/ant/MyClass.str:Ljava/lang/String;
+  #10 = Class              #41            // com/ant/MyClass
+  #11 = Class              #42            // java/lang/Thread
+  #12 = Class              #43            // java/io/Serializable
+  #13 = Utf8               i
+  #14 = Utf8               Ljava/lang/Integer;
+  #15 = Utf8               str
+  #16 = Utf8               Ljava/lang/String;
+  #17 = Utf8               <init>
+  #18 = Utf8               ()V
+  #19 = Utf8               Code
+  #20 = Utf8               LineNumberTable
+  #21 = Utf8               LocalVariableTable
+  #22 = Utf8               this
+  #23 = Utf8               Lcom/ant/MyClass;
+  #24 = Utf8               getFoo
+  #25 = Utf8               getBar
+  #26 = Utf8               ()Ljava/lang/String;
+  #27 = Utf8               <clinit>
+  #28 = Utf8               SourceFile
+  #29 = Utf8               MyClass.java
+  #30 = NameAndType        #17:#18        // "<init>":()V
+  #31 = Class              #44            // java/lang/System
+  #32 = NameAndType        #45:#46        // out:Ljava/io/PrintStream;
+  #33 = Utf8               foo
+  #34 = Class              #47            // java/io/PrintStream
+  #35 = NameAndType        #48:#49        // println:(Ljava/lang/String;)V
+  #36 = Utf8               bar
+  #37 = Class              #50            // java/lang/Integer
+  #38 = NameAndType        #51:#52        // valueOf:(I)Ljava/lang/Integer;
+  #39 = NameAndType        #13:#14        // i:Ljava/lang/Integer;
+  #40 = NameAndType        #15:#16        // str:Ljava/lang/String;
+  #41 = Utf8               com/ant/MyClass
+  #42 = Utf8               java/lang/Thread
+  #43 = Utf8               java/io/Serializable
+  #44 = Utf8               java/lang/System
+  #45 = Utf8               out
+  #46 = Utf8               Ljava/io/PrintStream;
+  #47 = Utf8               java/io/PrintStream
+  #48 = Utf8               println
+  #49 = Utf8               (Ljava/lang/String;)V
+  #50 = Utf8               java/lang/Integer
+  #51 = Utf8               valueOf
+  #52 = Utf8               (I)Ljava/lang/Integer;
+{
+  public com.ant.MyClass();
+    descriptor: ()V
+    flags: ACC_PUBLIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0
+         1: invokespecial #1                  // Method java/lang/Thread."<init>":()V
+         4: return
+      LineNumberTable:
+        line 12: 0
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0       5     0  this   Lcom/ant/MyClass;
+
+  public void getFoo();
+    descriptor: ()V
+    flags: ACC_PUBLIC
+    Code:
+      stack=2, locals=1, args_size=1
+         0: getstatic     #2                  // Field java/lang/System.out:Ljava/io/PrintStream;
+         3: ldc           #3                  // String foo
+         5: invokevirtual #4                  // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+         8: return
+      LineNumberTable:
+        line 17: 0
+        line 18: 8
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0       9     0  this   Lcom/ant/MyClass;
+
+  public java.lang.String getBar();
+    descriptor: ()Ljava/lang/String;
+    flags: ACC_PUBLIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: ldc           #5                  // String bar
+         2: areturn
+      LineNumberTable:
+        line 21: 0
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0       3     0  this   Lcom/ant/MyClass;
+
+  static {};
+    descriptor: ()V
+    flags: ACC_STATIC
+    Code:
+      stack=1, locals=0, args_size=0
+         0: iconst_1
+         1: invokestatic  #6                  // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+         4: putstatic     #7                  // Field i:Ljava/lang/Integer;
+         7: ldc           #8                  // String str
+         9: putstatic     #9                  // Field str:Ljava/lang/String;
+        12: return
+      LineNumberTable:
+        line 13: 0
+        line 14: 7
+}
+SourceFile: "MyClass.java"
